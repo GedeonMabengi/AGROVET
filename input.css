@@ -1,0 +1,68 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Votre propre code CSS personnalisé */
+
+*{
+    color: rgb(5, 31, 1);
+}
+html,body{
+    scroll-behavior: smooth;
+}
+.header{
+    background: rgba(12, 14, 12, 0.7);
+}
+.li-nav{
+    @apply py-4 md:py-0 md:mr-6 w-max
+}
+.a-nav{
+    @apply text-sm uppercase font-semibold text-white hover:text-green-600 w-max
+}
+
+.text-primair-green{
+    color: #09fc19;
+}
+.text-hard {
+    color: #1c944c;
+}
+.bg-hard{
+    background: #1c944c;
+}
+.bg-primaire-hover:hover {
+    background: #09fc19;
+}
+
+.swiper-pagination-bullet {
+    background: #000;
+}
+.swiper-pagination-bullet-active {
+    background: #1c944c;
+}
+
+/* style for blog section */
+.swiper-button-prev:after,.swiper-rtl .swiper-button-next:after {
+    content: '' !important;
+}
+.swiper-button-next:after,.swiper-rtl .swiper-button-prev:after {
+    content: '' !important;
+}
+.swiper-button-next svg,.swiper-button-prev svg {
+    width: 24px !important;
+    height: 24px !important;
+}
+.swiper-button-next,.swiper-button-prev {
+    position: relative !important;
+}
+.swiper-slide.swiper-slide-active {
+    --tw-border-opacity: 1 !important;
+    border-color: rgb(79 70 229 / var(--tw-border-opacity)) !important;
+}
+.swiper-slide.swiper-slide-active>.swiper-slide-active\:text-indigo-600 {
+    --tw-text-opacity: 1;
+    color: rgb(79 70 229 / var(--tw-text-opacity));
+}
+.swiper-slide.swiper-slide-active>.flex .grid .swiper-slide-active\:text-indigo-600 {
+    --tw-text-opacity: 1;
+    color: rgb(79 70 229 / var(--tw-text-opacity));
+}
