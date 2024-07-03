@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <style>
+        /*! tailwindcss v3.4.4 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:initial}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:initial;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:initial}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]{display:none}*,::backdrop,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:#3b82f680;--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }
+    </style>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>AGROVET</title>
+</head>
+<body id="top">
+    <header class="bg-white z-30 fixed top-0 w-full shadow"> 
+        <nav id="main-nav" class="bg-white max-w-5xl mx-auto font-popins p-6 flex items-center justify-between ">
+            <a href="" class="flex" aria-label="logo">
+                <span translate="no" class="text-lg lg:text-xl" aria-hidden="true">
+                    AGROVET.
+                </span>
+            </a>
+            <button aria-label="toggle button" aria-expanded="false" id="menu-btn" class="cursor-pointer w-7 md:hidden">
+                <svg class="size-7" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><line x1="88" y1="152" x2="424" y2="152" style="fill:none;stroke:#000;stroke-linecap:round;stroke-miterlimit:10;stroke-width:48px"/><line x1="88" y1="256" x2="424" y2="256" style="fill:none;stroke:#000;stroke-linecap:round;stroke-miterlimit:10;stroke-width:48px"/><line x1="88" y1="360" x2="424" y2="360" style="fill:none;stroke:#000;stroke-linecap:round;stroke-miterlimit:10;stroke-width:48px"/></svg>
+            </button>
+            <ul id="toggled-menu" class="w-full absolute top-full left-0 -translate-y-full -z-10 bg-white text-green-800 border-b border-green-200 flex flex-col items-center md:static md:z-10 md:w-min md:transform-none md:border-none md:flex-row">
+                <li class="py-4 md:py-0 md:mr-6 w-max">
+                    <a href="#top" class="text-sm uppercase font-semibold hover:text-green-600 w-max">
+                        Acceuil
+                    </a>
+                </li>
+                <li class="py-4 md:py-0 md:mr-6 w-max">
+                    <a href="#about" class="text-sm uppercase font-semibold w-max hover:text-green-600">
+                        A propos
+                    </a>
+                </li>
+                <li class="py-4 md:py-0 md:mr-6 w-max">
+                    <a href="#services" class="text-sm uppercase font-semibold w-max hover:text-green-600">
+                        Services
+                    </a>
+                </li>
+                <li class="py-4 md:py-0 md:mr-6 w-max">
+                    <a href="#blog" class="text-sm uppercase font-semibold w-max hover:text-green-600">
+                        Blog
+                    </a>
+                </li>
+                <li class="py-4 md:py-0 md:mr-6 w-max">
+                    <a href="#contact" class="text-sm uppercase font-semibold w-max hover:text-green-600">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="py-24 ">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-center flex-wrap md:flex-wrap lg:flex-nowrap lg:flex-row lg:justify-between gap-8">
+            <div class="w-full flex justify-between flex-col lg:w-2/5">
+              <div class="block lg:text-left text-center">
+                <h2 class="text-4xl font-bold text-green-900 leading-[3.25rem] mb-5">Nos derniers <span class=" text-green-600">Articles</span></h2>
+                <p class="text-green-500 mb-10  max-lg:max-w-xl max-lg:mx-auto">Welcome to our blog section, where knowledge meets inspiration. Explore insightful articles, expert tips, and the latest trends in our field.</p>
+                <!-- <a href="javascript:;" class="cursor-pointer border border-green-300 shadow-sm rounded-full py-3.5 px-7 w-52 lg:mx-0 mx-auto flex justify-center text-green-900 font-semibold transition-all duration-300 hover:bg-green-100">View All</a> -->
+              </div>
+              <!-- Slider controls -->
+              <!-- <div class="flex items-center lg:justify-start justify-center lg:mt-0 mt-8 gap-8 mb-4">
+                <button id="slider-button-left" class="swiper-button-prev group flex justify-center items-center border border-solid border-green-600 w-11 h-11 transition-all duration-500 rounded-full hover:bg-green-600" data-carousel-prev>
+                  <svg class="h-6 w-6 text-green-600 group-hover:text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.9999 12L4.99992 12M9.99992 6L4.70703 11.2929C4.3737 11.6262 4.20703 11.7929 4.20703 12C4.20703 12.2071 4.3737 12.3738 4.70703 12.7071L9.99992 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+                <button id="slider-button-right" class="swiper-button-next group flex justify-center items-center border border-solid border-green-600 w-11 h-11 transition-all duration-500 rounded-full hover:bg-green-600" data-carousel-next>
+                  <svg class="h-6 w-6 text-green-600 group-hover:text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 12L19 12M14 18L19.2929 12.7071C19.6262 12.3738 19.7929 12.2071 19.7929 12C19.7929 11.7929 19.6262 11.6262 19.2929 11.2929L14 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>      
+                  </button>
+              </div> -->
+            </div>
+  
+            <div class="w-full lg:w-3/5">
+                <!--Slider wrapper-->
+                <div class="swiperx mySwiperx">
+                    <div class="swiper-wrapperx">
+                        <div class="swiper-slidex w-full max-lg:max-w-xl lg:w-1/2 group mt-14">
+                            <div class="flex items-center mb-9">
+                                <img src="assets/img/people/peole1.jpg" alt="blogs tailwind section" class="rounded-2xl w-full">
+                            </div>
+                            <h3 class="text-xl text-green-900 font-medium leading-8 mb-4 group-hover:text-green-600">Clever ways to invest in product to organize your portfolio</h3>
+                            <p class="text-green-500 leading-6 transition-all duration-500 mb-8">
+                                Discover smart investment strategies to streamline and organize your portfolio. Explore innovative approaches to optimize your...
+                            </p>
+                            <a href="javascript:;" class="cursor-pointer flex items-center gap-2 text-lg text-green-700 font-semibold">
+                                Read more<svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.25 6L13.25 6M9.5 10.5L13.4697 6.53033C13.7197 6.28033 13.8447 6.15533 13.8447 6C13.8447 5.84467 13.7197 5.71967 13.4697 5.46967L9.5 1.5" stroke="#1c944c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                  </a>
+                        </div>
+
+                        <div class="swiper-slidex w-full max-lg:max-w-xl lg:w-1/2 group mt-14">
+                          <div class="flex items-center mb-9">
+                            <img src="assets/img/people/peolpe2.jpg" alt="blogs tailwind section" class="rounded-2xl w-full">
+                          </div>
+                          <h3 class="text-xl text-green-900 font-medium leading-8 mb-4 group-hover:text-green-600">How to grow your profit through systematic investment with us</h3>
+                          <p class="text-green-500 leading-6 transition-all duration-500 mb-8">
+                            Unlock the power of systematic investment with us and watch your profits soar. Our expert team will guide you on the path to financial..
+                          </p>
+                          <a href="javascript:;" class="cursor-pointer flex items-center gap-2 text-lg text-green-700 font-semibold">
+                            Read more<svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.25 6L13.25 6M9.5 10.5L13.4697 6.53033C13.7197 6.28033 13.8447 6.15533 13.8447 6C13.8447 5.84467 13.7197 5.71967 13.4697 5.46967L9.5 1.5" stroke="#1c944c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                  </a>
+                        </div>
+
+                        <div class="swiper-slidex w-full max-lg:max-w-xl lg:w-1/2 group mt-14">
+                            <div class="flex items-center mb-9">
+                                <img src="assets/img/people/people3.jpg" alt="blogs tailwind section" class="rounded-2xl w-full">
+                            </div>
+                            <h3 class="text-xl text-green-900 font-medium leading-8 mb-4 group-hover:text-green-600">Clever ways to invest in product to organize your portfolio</h3>
+                            <p class="text-green-500 leading-6 transition-all duration-500 mb-8">
+                                Discover smart investment strategies to streamline and organize your portfolio. Explore innovative approaches to optimize your...
+                            </p>
+                            <a href="javascript:;" class="cursor-pointer flex items-center gap-2 text-lg text-green-700 font-semibold">
+                                Read more<svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.25 6L13.25 6M9.5 10.5L13.4697 6.53033C13.7197 6.28033 13.8447 6.15533 13.8447 6C13.8447 5.84467 13.7197 5.71967 13.4697 5.46967L9.5 1.5" stroke="#1c944c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                  </a>
+                        </div>
+
+                        <div class="swiper-slide w-full max-lg:max-w-xl lg:w-1/2 group mt-14">
+                            <div class="flex items-center mb-9">
+                                <img src="assets/img/people/people4.jpg" alt="blogs tailwind section" class="rounded-2xl w-full">
+                            </div>
+                            <h3 class="text-xl text-green-900 font-medium leading-8 mb-4 group-hover:text-green-600">How to grow your profit through systematic investment with us</h3>
+                            <p class="text-green-500 leading-6 transition-all duration-500 mb-8">
+                                Unlock the power of systematic investment with us and watch your profits soar. Our expert team will guide you on the path to financial..
+                            </p>
+                            <a href="javascript:;" class="cursor-pointer flex items-center gap-2 text-lg text-green-700 font-semibold">
+                                Read more<svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.25 6L13.25 6M9.5 10.5L13.4697 6.53033C13.7197 6.28033 13.8447 6.15533 13.8447 6C13.8447 5.84467 13.7197 5.71967 13.4697 5.46967L9.5 1.5" stroke="#1c944c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                  </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
