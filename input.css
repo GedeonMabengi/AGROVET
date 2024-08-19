@@ -1,11 +1,18 @@
 @import 'tailwindcss/base';
-@import 'tailwindcss/components';
+/* @import 'tailwindcss/components'; */
 @import 'tailwindcss/utilities';
 
 /* Votre propre code CSS personnalisé */
 
 *{
-    color: rgb(5, 31, 1);
+    /* color: rgb(5, 31, 1); */
+    @apply dark:text-[#f1f7f6]
+}
+svg{
+    fill: #000;
+}
+.body{
+    background: #021817;
 }
 html,body{
     scroll-behavior: smooth;
@@ -65,4 +72,7 @@ html,body{
 .swiper-slide.swiper-slide-active>.flex .grid .swiper-slide-active\:text-indigo-600 {
     --tw-text-opacity: 1;
     color: rgb(79 70 229 / var(--tw-text-opacity));
+}
+.test{
+    color: #013821;
 }

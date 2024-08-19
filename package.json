@@ -1,17 +1,5 @@
 {
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^6.0.0",
-    "autoprefixer": "^10.4.19",
-    "postcss": "^8.4.39",
     "tailwindcss": "^3.4.4"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx tailwindcss -i input.css -o src/assets/css/style.css",
-    "build:css": "postcss src/assets/css/style.css -o dist/styles.css"
-  },
-  "dependencies": {
-    "postcss-cli": "^11.0.0",
-    "swiper": "^11.1.4"
   }
 }
